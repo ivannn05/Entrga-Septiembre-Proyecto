@@ -1,0 +1,183 @@
+/* Estilo general del cuerpo */
+body {
+	background-color: #F3F0E5; /* Fondo beige para dar un tono cálido */
+}
+
+/* Barra de navegación */
+.navbar {
+	background-color: #5B3E34; /* Fondo marrón oscuro para la barra */
+}
+
+/* Logo dentro de la barra de navegación */
+.navbar-brand img {
+	width: 60px; /* Tamaño del logo */
+}
+
+/* Estilo de los enlaces de navegación */
+.navbar-nav .nav-link {
+	color: #C4D1AA; /* Verde claro para los enlaces */
+}
+
+/* Cambia el color de los enlaces al pasar el ratón */
+.navbar-nav .nav-link:hover {
+	color: #fff; /* Blanco al pasar el ratón */
+}
+
+/* Íconos de la barra de navegación (como el carrito y usuario) */
+.icono {
+	color: #C4D1AA; /* Verde claro para íconos */
+	font-size: 1.5rem; /* Tamaño grande de los íconos */
+}
+
+/* Cambia el color de los íconos al pasar el ratón */
+.icono:hover {
+	color: #fff; /* Blanco al pasar el ratón */
+}
+
+/* Bloque principal de contenido */
+.content-block {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	gap: 20px;
+	padding: 20px;
+	align-items: center;
+}
+
+/* Estilo para las imágenes de las columnas izquierda y derecha */
+.left-image img, .right-image img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+/* Contenedor de imágenes centrales */
+.center-images {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+/* Estilo de las imágenes centrales */
+.center-images img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+/* General */
+.separacion {
+	margin: 20px 0;
+	padding: 15px;
+	background-color: #F3F0E5;
+	border-radius: 8px;
+}
+
+/* Tarjetas de productos */
+.agrandar {
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	cursor: pointer;
+	background-color: #ffffff;
+}
+
+.agrandar:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Bordes y diseño interno */
+.agrandar img {
+	border-radius: 8px;
+	object-fit: cover;
+	width: 100%;
+}
+
+.agrandar .row {
+	margin: 10px 0;
+}
+
+/* Títulos de los productos */
+.morado {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #5B3E34;
+	text-transform: capitalize;
+}
+
+.nav-link.active {
+	color: white !important;
+	font-weight: bold;
+}
+
+.boton-carrito {
+	background-color: #5B8C5A;
+	border-color: #5B8C5A;
+	color: #fff;
+	transition: all 0.3s ease;
+	font-weight: bold;
+}
+
+.boton-carrito:hover {
+	background-color: #3e6e3d;
+	border-color: #3e6e3d;
+}
+
+/* Estilos para mensaje centrado */
+.mensaje-body {
+	background-color: #F3F0E5;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mensaje-container {
+	background-color: #ffffff;
+	padding: 30px 40px;
+	border-radius: 10px;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	max-width: 420px;
+	width: 90%;
+	transition: transform 0.3s ease;
+}
+
+.mensaje-container:hover {
+	transform: scale(1.03);
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.mensaje-container h1 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #5B3E34;
+	margin: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+	.agrandar {
+		margin-bottom: 20px;
+	}
+	html, body {
+		height: 100%;
+		margin: 0;
+	}
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+	.content {
+		flex: 1;
+	}
+	footer {
+		background-color: #5B3E34;
+		color: #C4D1AA;
+		text-align: center;
+		padding: 15px 0;
+	}
+}
